@@ -53,8 +53,16 @@ h2
 	font-stretch: 80%
 	font-weight: 550
 	margin: 10vh 0
-	letter-spacing: 0.0375rem
+	letter-spacing: 0.025rem
 	line-height: 1.05
+
+	.label
+		text-align: center
+		font-size: 1.225rem
+		font-stretch: 90%
+		font-weight: 450
+		letter-spacing: 0.0375rem
+		line-height: 1.05
 
 h3
 	text-align: center
@@ -77,8 +85,8 @@ a:hover
 	text-decoration-color: rgba(0,0,0,0)
 
 header
-	h1
-		letter-spacing: 0.125rem
+	h3
+		letter-spacing: 0.025rem
 
 footer
 	font-size: 0.75rem
@@ -114,17 +122,6 @@ main
 	min-height: 100vh
 	padding: 17.5vh 3rem
 
-footer
-	min-height: 17.5vh
-	padding: 3.125vh 3rem
-
-	display: flex
-	flex-flow: row
-	align-items: center
-	justify-content: space-between
-	flex-wrap: wrap
-	gap: 0.5rem
-
 main.home
 	min-height: 132.5vh
 	display: flex
@@ -147,13 +144,27 @@ main.photography, main.development
 		border-radius: 0.5rem
 
 main.development
+	padding-bottom: 30vh
 	section
 		width: 42.5vw
+
+footer
+	min-height: 17.5vh
+	padding: 3.125vh 3rem
+
+	display: flex
+	flex-flow: row
+	align-items: center
+	justify-content: space-between
+	flex-wrap: wrap
+	gap: 0.5rem
 
 
 
 // Decorations
 
-main.development
+main.development, main.photography
 	img
 		border: 2px solid $secondary-color
+		border-right: 4px solid $secondary-color
+		border-left: 4px solid $secondary-color

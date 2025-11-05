@@ -91,6 +91,14 @@ h2 {
   font-stretch: 80%;
   font-weight: 550;
   margin: 10vh 0;
+  letter-spacing: 0.025rem;
+  line-height: 1.05;
+}
+h2 .label {
+  text-align: center;
+  font-size: 1.225rem;
+  font-stretch: 90%;
+  font-weight: 450;
   letter-spacing: 0.0375rem;
   line-height: 1.05;
 }
@@ -119,8 +127,8 @@ a:hover {
   text-decoration-color: rgba(0, 0, 0, 0);
 }
 
-header h1 {
-  letter-spacing: 0.125rem;
+header h3 {
+  letter-spacing: 0.025rem;
 }
 
 footer {
@@ -159,17 +167,6 @@ main {
   padding: 17.5vh 3rem;
 }
 
-footer {
-  min-height: 17.5vh;
-  padding: 3.125vh 3rem;
-  display: flex;
-  flex-flow: row;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
 main.home {
   min-height: 132.5vh;
   display: flex;
@@ -192,16 +189,59 @@ main.photography img, main.development img {
   border-radius: 0.5rem;
 }
 
+main.development {
+  padding-bottom: 30vh;
+}
 main.development section {
   width: 42.5vw;
 }
 
-main.development img {
+footer {
+  min-height: 17.5vh;
+  padding: 3.125vh 3rem;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+main.development img, main.photography img {
   border: 2px solid #04000f;
+  border-right: 4px solid #04000f;
+  border-left: 4px solid #04000f;
 }
 
 @media screen and (max-width: 730px) {
   html {
     font-size: 5vw;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  header {
+    min-height: 12.5vh;
+    padding: 2.5vh 1.5rem;
+  }
+  main {
+    min-height: 75vh;
+    padding: 7.5vh 1.5rem;
+  }
+  main.photography {
+    gap: 7.5vh;
+    padding: 7.5vh 0.75rem;
+  }
+  main.development section {
+    width: 85vw;
+  }
+  footer {
+    min-height: 12.5vh;
+    padding: 2.5vh 1.5rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 7.5vw;
   }
 }/*# sourceMappingURL=general.css.map */
