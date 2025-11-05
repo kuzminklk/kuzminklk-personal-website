@@ -204,9 +204,4 @@ main.development img {
   html {
     font-size: 5vw;
   }
-}
-@media screen and (max-width: 450px) {
-  html {
-    font-size: 7.5vw;
-  }
 }/*# sourceMappingURL=general.css.map */
