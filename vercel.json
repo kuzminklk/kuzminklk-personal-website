@@ -11,6 +11,5 @@
 			"dest": "server/src/app.js"
 		}
 	],
-	"buildCommand": "npm run build",
-	"outputDirectory": "client/dist"
+	"buildCommand": "npm run build"
 }
