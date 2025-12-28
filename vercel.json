@@ -1,8 +1,12 @@
 {
 	"builds": [
 		{
-			"src": "server/src/app.js",
+			"src": "server/",
 			"use": "@vercel/node"
+		},
+		{
+			"src": "client/",
+			"use": "@vercel/vite"
 		}
 	],
 	"routes": [
