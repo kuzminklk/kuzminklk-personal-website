@@ -8,7 +8,7 @@ dotenv.config();
 
 
 const PORT = process.env.port || 3500;
-const VIEWSPATH = path.resolve(import.meta.dirname, '..', '..', 'client', 'dist');
+const VIEWSPATH = path.join(import.meta.dirname, '..', '..', 'client', 'dist');
 
 const app = express();
 
