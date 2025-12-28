@@ -22,6 +22,4 @@ app.use(/.*/, (req, res) => {
     res.sendFile(path.join(VIEWSPATH, 'index.html'))
 });
 
-app.listen(PORT);
-
 export default app;
