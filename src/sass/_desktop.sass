@@ -33,7 +33,7 @@ footer
 
 $primary-font: "Amstelvar VF", Georgia, serif
 $secondary-font: 'PitchWeb', Courier, monospace
-$primary-size: 3.125vw
+$primary-size: calc(1rem + 1.5vw)
 
 main::selection
 	background: $secondary-color
@@ -121,8 +121,8 @@ html
 	scroll-behavior: smooth
 
 header
-	min-height: 17.5vh
-	padding: 2.5vh 3rem
+	min-height: calc(1rem + 15vh)
+	padding: calc(0.5rem + 1.5vh) 3rem
 	display: flex
 	align-items: center
 
@@ -157,8 +157,8 @@ main.development
 		width: 42.5vw
 
 footer
-	min-height: 17.5vh
-	padding: 3.125vh 3rem
+	min-height: calc(1rem + 15vh)
+	padding: calc(1rem + 1.5vh) 3rem
 
 	display: flex
 	flex-flow: row
