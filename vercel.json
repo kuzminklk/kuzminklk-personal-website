@@ -1,19 +1,23 @@
 {
-	"builds": [
-		{
-			"src": "server/",
-			"use": "@vercel/node"
-		},
-		{
-			"src": "client/",
-			"use": "@vercel/vite"
-		}
-	],
-	"routes": [
-		{
-			"src": "/(.*)",
-			"dest": "server/src/app.js"
-		}
-	],
-	"buildCommand": "npm run build"
+  "version": 2,
+  "builds": [
+    {
+      "src": "server/src/app.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "dest": "client/dist/assets/$1"
+    },
+    {
+      "src": "/img/(.*)",
+      "dest": "client/dist/img/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "server/src/app.js"
+    }
+  ]
 }
