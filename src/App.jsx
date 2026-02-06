@@ -4,15 +4,14 @@ import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 
 import { Footer } from './components/Footer'
+import { Header } from './components/Header'
 
 
 function App() {
 
 	return (
 		<>
-			<header>
-				<h3>kuzminklk</h3>
-			</header>
+			<Header />
 			<Routes>
 				<Route path='/' element={
 					<main class="home">
