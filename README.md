@@ -1,2 +1,8 @@
 
-Personal website project. Live development.
+
+### Description
+Personal website project
+
+
+### Status
+Work in progress
