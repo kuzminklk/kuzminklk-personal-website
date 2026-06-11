@@ -1,8 +1,8 @@
 
 
 ### Description
-Personal website project
+Personal website
 
 
 ### Status
-Work in progress
+Work in progress 🚧
