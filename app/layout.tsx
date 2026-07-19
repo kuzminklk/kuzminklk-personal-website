@@ -4,25 +4,15 @@
 
 // Next.js
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 
 // Local
-import "./_style/general.sass";
-import { Footer } from './_components/Footer'
-import { Header } from './_components/Header'
+import "./globals.css";
+import { amstelvar } from "./_fonts/amstelvar";
+import { Footer } from "./_components/Footer";
+import { Header } from "./_components/Header";
 
 
 // — Code —
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "kuzminklk",
@@ -41,14 +31,13 @@ export const metadata: Metadata = {
   }
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`${amstelvar.variable}`}>
       <body>
         <Header/>
           {children}

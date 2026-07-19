@@ -1,0 +1,21 @@
+
+
+/* — Layout — */
+
+.main {
+	min-height: 100vh;
+	padding: 17.5vh 3rem;
+}
+
+
+/* — Colors — */
+
+.main {
+	background: var(--primary-color);
+	color: var(--secondary-color);
+}
+
+.main::selection {
+	background: var(--secondary-color);
+	color: var(--primary-color);
+}
