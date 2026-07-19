@@ -84,6 +84,12 @@ table {
 	--primary-size: calc(1rem + 0.5vw);
 }
 
+@media screen and (max-width: 730px) {
+	:root {
+		--primary-size: calc(1.5rem + 0.5vw);
+	}
+}
+
 
 
 /* ——— Global styles ——— */
@@ -133,6 +139,22 @@ footer {
 	flex-wrap: wrap;
 }
 
+@media screen and (max-width: 730px) {
+	header {
+		flex-direction: column;
+		padding: 3rem 1.5rem;
+		gap: 2.5rem;
+	}
+
+	main {
+		padding: 5rem 1.5rem;
+	}
+
+	footer {
+		padding: 1.5rem 1.5rem;
+	}
+}
+
 
 /* — Colors — */
 
@@ -164,7 +186,7 @@ h1 {
 	font-size: 3.125rem;
 	font-stretch: 75%;
 	font-weight: 450;
-	margin: 15vh 0;
+	margin: 5rem 0;
 	line-height: 1.05;
 }
 
@@ -173,7 +195,7 @@ h2 {
 	font-size: 1.5rem;
 	font-stretch: 80%;
 	font-weight: 550;
-	margin: 10vh 0;
+	margin: 2.5rem 0;
 	letter-spacing: 0.025rem;
 	line-height: 1.05;
 }
@@ -220,5 +242,12 @@ footer {
 
 	a:hover {
 		text-decoration-color: rgba(0, 0, 0, 0);
+	}
+}
+
+@media screen and (max-width: 730px) {
+	h1 {
+		font-size: 2.5rem;
+		margin: 2.5rem 0;
 	}
 }
