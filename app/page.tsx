@@ -2,20 +2,24 @@
 
 import "./page.module.css";
 
-import { Main } from "./_components/Main";
+import { Emoji } from "./_components/Emoji";
 import styles from "./page.module.css";
 
 
-export default function Home() {
+export default function About() {
   return (
-    <Main className={styles.home}>
-      <section>
+    <main className={styles.about}>
+      <section className={styles.greet}>
         <h1>
-          Design, Development (Web, AI, Blockchain), Photography,
-          Writing
+          <Emoji symbol="👋" label="Waving hand" size="3.125rem"/> Hi! I'm Daniel! 
         </h1>
-        <h2 id="languages">English, Русский</h2>
+        <img src="./me.jpg"></img>
       </section>
-    </Main>
+      <section className={styles.about}>
+        <p><strong>Computer-science engineer</strong> currently focused in Web3, Front-end and AI</p>
+        <p>Also I do sports <Emoji symbol="💪" label="Biceps"/>, take photos <Emoji symbol="📸" label="Shooting camera"/> and read a lot of books <Emoji symbol="📚" label="Pack of books"/> (from Dawkins to Noah Harari, from Tolstoy to Xunzi)!</p>
+        <p>Speak three languages: English, Russian, Belarussian</p>
+      </section>
+    </main>
 	)
 }

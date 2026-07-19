@@ -2,15 +2,10 @@
 
 /* — Typography — */
 
-.socials {
+main.connect {
+
 	h2 {
 		text-align: justify;
-		font-size: 1.5rem;
-		font-stretch: 80%;
-		font-weight: 550;
-		margin: 10vh 0;
-		letter-spacing: 0.025rem;
-		line-height: 1.05;
 	}
 
 	a {
@@ -22,14 +17,14 @@
 	a:hover {
 		text-decoration-color: rgba(0, 0, 0, 0);
 	}
-}
 
-.label {
+	.label {
 	text-align: center;
 	font-size: 1.225rem;
 	font-stretch: 90%;
 	font-weight: 450;
 	letter-spacing: 0.0375rem;
 	line-height: 1.05;
+	}
 }
 

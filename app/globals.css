@@ -1,5 +1,6 @@
 
 
+
 /* ——— Reset ——— */
 
 html, body, div, span, applet, object, iframe,
@@ -55,6 +56,7 @@ table {
 
 /* ——— Variables ——— */
 
+
 /* — Colors — */
 
 @media (prefers-color-scheme: light) {
@@ -73,12 +75,13 @@ table {
   }
 }
 
+
 /* — Typography — */
 
 :root {
 	--primary-font: var(--font-amstelvar), Georgia, serif;
 	--secondary-font: 'PitchWeb', Courier, monospace;
-	--primary-size: calc(1rem + 1.5vw);
+	--primary-size: calc(1rem + 0.5vw);
 }
 
 
@@ -93,4 +96,127 @@ table {
 
 * {
 	box-sizing: border-box;
+}
+
+
+/* — Layout — */
+
+main {
+	min-height: 125vh;
+	padding: 7.5rem 3rem;
+}
+
+header {
+	padding: 1.5rem 3rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 1.75rem;
+
+	nav {
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+	}
+}
+
+footer {
+	padding: 1.5rem 3rem;
+
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+
+/* — Colors — */
+
+main {
+	background: var(--primary-color);
+	color: var(--secondary-color);
+}
+
+main::selection {
+	background: var(--secondary-color);
+	color: var(--primary-color);
+}
+
+header, footer {
+	background: var(--secondary-color);
+	color: var(--primary-color);
+}
+
+header::selection, footer::selection {
+	background: var(--primary-color);
+	color: var(--secondary-color);
+}
+
+
+/* Typography */
+
+h1 {
+	text-align: center;
+	font-size: 3.125rem;
+	font-stretch: 75%;
+	font-weight: 450;
+	margin: 15vh 0;
+	line-height: 1.05;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1.5rem;
+	font-stretch: 80%;
+	font-weight: 550;
+	margin: 10vh 0;
+	letter-spacing: 0.025rem;
+	line-height: 1.05;
+}
+
+h3 {
+	font-size: 1.25rem;
+	font-stretch: 90%;
+	font-weight: 500;
+	letter-spacing: 0.025rem;
+}
+
+p {
+	word-spacing: 0.05rem;
+	letter-spacing: 0.05rem;
+	line-height: 1.15;
+}
+
+header {
+	a {
+		font-size: 1rem;
+		font-family: var(--secondary-font);
+		color: var(--primary-color);
+		text-decoration: underline;
+		transition: text-decoration-color 0.075s ease;
+	}
+
+	a:hover {
+		text-decoration-color: rgba(0, 0, 0, 0);
+	}
+}
+
+footer {
+	font-family: var(--secondary-font);
+
+	h3 {
+		font-size: 1rem;
+	}
+
+	a {
+		color: var(--primary-color);
+		text-decoration: underline;
+		transition: text-decoration-color 0.075s ease;
+	}
+
+	a:hover {
+		text-decoration-color: rgba(0, 0, 0, 0);
+	}
 }
