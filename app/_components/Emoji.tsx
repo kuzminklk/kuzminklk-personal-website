@@ -5,18 +5,16 @@ interface EmojiProps {
 	size?: string;
 }
 
-export function Emoji({ symbol, label, size = "1rem" }: EmojiProps) {
+export function Emoji({ symbol, label }: EmojiProps) {
 	return (
 		<span 
 			role="img" 
 			aria-label={label} 
 			aria-hidden={label ? "false" : "true"}
 			style={{
-				fontSize: size,
 				display: "inline-flex",
 				alignItems: "center",
-				justifyContent: "center",
-				lineHeight: 1
+				justifyContent: "center"
 			}}
 		>
 			{symbol}

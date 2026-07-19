@@ -29,8 +29,24 @@ main.about {
 
 	img {
 		flex: auto;
-		max-width: 27.5%;
+		max-width: 10rem;
 		border-radius: 100%;
 		border: 4px solid var(--secondary-color);
+	}
+}
+
+
+/* — Typography — */
+
+main.about {
+	a {
+		font-family: var(--secondary-font);
+		color: var(--secondary-color);
+		text-decoration: underline;
+		transition: text-decoration-color 0.075s ease;
+	}
+
+	a:hover {
+		text-decoration-color: rgba(0, 0, 0, 0);
 	}
 }

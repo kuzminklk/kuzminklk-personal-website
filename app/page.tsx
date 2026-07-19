@@ -1,6 +1,6 @@
 
 
-import "./page.module.css";
+import Link from "next/link";
 
 import { Emoji } from "./_components/Emoji";
 import styles from "./page.module.css";
@@ -17,7 +17,7 @@ export default function About() {
       </section>
       <section className={styles.about}>
         <p><strong>Computer-science engineer</strong> currently focused in Web3, Front-end and AI</p>
-        <p>Also I do sports <Emoji symbol="💪" label="Biceps"/>, take photos <Emoji symbol="📸" label="Shooting camera"/> and read a lot of books <Emoji symbol="📚" label="Pack of books"/> (from Dawkins to Noah Harari, from Tolstoy to Xunzi)!</p>
+        <p>Also <Link href="/sports">I do sports<Emoji symbol="&nbsp;💪" label="Biceps"/></Link>, <Link href="/photography">take photos<Emoji symbol="&nbsp;📸" label="Shooting camera"/></Link> and <Link href="/books">read a lot of books<Emoji symbol="&nbsp;📚" label="Pack of books"/></Link> (from Dawkins to Noah Harari, from Tolstoy to Xunzi)!</p>
         <p>Speak three languages: English, Russian, Belarussian</p>
       </section>
     </main>

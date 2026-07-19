@@ -42,10 +42,13 @@ export default function RootLayout({
         <header>
           <h3>kuzminklk</h3>
           <nav>
-            <h3><Link href="/">About<Emoji symbol="&nbsp;🧑‍🚀" label="About me" /></Link></h3>
-            <h3><Link href="/photography">Photography<Emoji symbol="&nbsp;📸" label="My photography"/></Link></h3>
-            <h3><Link href="/development">Development<Emoji symbol="&nbsp;💻" label="My development"/></Link></h3>
-            <h3><Link href="/connect">Connect<Emoji symbol="&nbsp;🤝" label="Connect with me"/></Link></h3>
+            <h3><Link href="/">About<Emoji symbol="&nbsp;🧑‍🚀" label="Astronaut" /></Link></h3>
+            <h3><Link href="/development">Development<Emoji symbol="&nbsp;💻" label="Computer"/></Link></h3>
+            <h3><Link href="/photography">Photography<Emoji symbol="&nbsp;📸" label="Camera"/></Link></h3>
+            <h3><Link href="/sports">Sports<Emoji symbol="&nbsp;💪" label="Biceps"/></Link></h3>
+            <h3><Link href="/books">Books<Emoji symbol="&nbsp;📚" label="Pack of books"/></Link></h3>
+            <h3><Link href="/writings">Writings<Emoji symbol="&nbsp;📒" label="Notebook"/></Link></h3>
+            <h3><Link href="/connect">Connect<Emoji symbol="&nbsp;🤝" label="Handshake"/></Link></h3>
           </nav>
 		  	</header>
           {children}
