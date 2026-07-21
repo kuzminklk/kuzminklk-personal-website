@@ -1,9 +1,12 @@
 
 
 import Link from "next/link";
+import Image from "next/image";
 
 import { Emoji } from "./_components/Emoji";
 import styles from "./page.module.css";
+
+import Me from "@/public/me.jpg"
 
 
 export default function About() {
@@ -13,7 +16,7 @@ export default function About() {
         <h1>
           <Emoji symbol="👋" label="Waving hand" size="3.125rem"/> Hi! I'm Daniel! 
         </h1>
-        <img src="./me.jpg"></img>
+        <Image src={Me} alt="Me in yellow jacket"></Image>
       </section>
       <section className={styles.about}>
         <p><strong>Computer-science engineer</strong> currently focused in Web3, Front-end and AI</p>

@@ -5,10 +5,12 @@
 // Next.js
 import type { Metadata } from "next";
 import Link from "next/link";
+import localFont from "next/font/local";
+
+import { Red_Hat_Mono } from "next/font/google"
 
 // Local
 import "./globals.css";
-import { amstelvar } from "./_fonts/amstelvar";
 import { Emoji } from "./_components/Emoji";
 
 
@@ -20,16 +22,19 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/scroll-solid-dark.svg",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/scroll-solid-light.svg",
-        media: "(prefers-color-scheme: dark)",
+        url: "/scroll.svg",
       }
     ]
   }
 };
+
+const redHatMono = Red_Hat_Mono({subsets: ["latin"], weight: "400"})
+
+const amstelvar = localFont({
+  src: "../public/amstelvar.woff2",
+  display: "swap",
+})
+
 
 export default function RootLayout({
   children,
@@ -37,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${amstelvar.variable}`}>
+    <html lang="en" className={`${amstelvar.className} ${redHatMono.className}`}>
       <body>
         <header>
           <h3>kuzminklk</h3>

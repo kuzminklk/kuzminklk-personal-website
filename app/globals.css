@@ -79,8 +79,8 @@ table {
 /* — Typography — */
 
 :root {
-	--primary-font: var(--font-amstelvar), Georgia, serif;
-	--secondary-font: 'PitchWeb', Courier, monospace;
+	--primary-font: "Amstelvar", Georgia, serif;
+	--secondary-font: 'Red Hat Mono', Courier, monospace;
 	--primary-size: calc(1rem + 0.5vw);
 }
 
@@ -211,6 +211,10 @@ p {
 	word-spacing: 0.05rem;
 	letter-spacing: 0.05rem;
 	line-height: 1.15;
+}
+
+strong {
+	font-weight: 650;
 }
 
 header {
