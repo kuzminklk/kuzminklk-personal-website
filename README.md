@@ -5,8 +5,8 @@ My personal website project
 
 
 ### Branches
-- main—production ready for Vercel
-- typescript-next—Next.js and TypeScript implementation
+- **main—production ready for Vercel**
+- **typescript-next—Next.js and TypeScript implementation**
 - javascript-express-vite-react—Express as a server and React plus Vite as front-end implementation
 - javascript-express—Express as a server and static front-end implementation
 - javascript-vite-react—React and Vite front-end implementation
@@ -17,4 +17,4 @@ My personal website project
 2. Implement with Express
 3. Implement with React and Vite
 4. Try to combine Express and React plus Vite
-5. Implement with Next.js and TypeScript 
+5. **Implement with Next.js and TypeScript**
