@@ -81,7 +81,7 @@ export default function Home() {
 							<h3>Tsender</h3>
 						</Link>
 						<p>User interface for efficient airdrop sender smart-contract</p>
-						<Link href="https://strawberry-vendor.vercel.app/" target="blank">
+						<Link href="https://tsender-taupe.vercel.app/" target="blank">
 							<Image src={tsender} placeholder="blur" alt="Tsender website screenshot"/>
 						</Link>
 					</section>
