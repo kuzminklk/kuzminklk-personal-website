@@ -46,17 +46,22 @@ main.about {
 }
 
 
-/* — Typography — */
+/* — Colors — */
 
 main.about {
-	a {
-		font-family: var(--secondary-font);
-		color: var(--secondary-color);
-		text-decoration: underline;
-		transition: text-decoration-color 0.075s ease;
+	img {
+		animation: glowing 5s ease infinite;
 	}
+}
 
-	a:hover {
-		text-decoration-color: rgba(0, 0, 0, 0);
+@keyframes glowing {
+	0% {
+		filter: drop-shadow(0 0 1.5rem var(--secondary-color));
+	}
+	50% {
+		filter: drop-shadow(0 0 2.5rem var(--secondary-color));
+	}
+	100% {
+		filter: drop-shadow(0 0 1.5rem var(--secondary-color));
 	}
 }
