@@ -49,6 +49,9 @@ main.development {
 		
 		section {
 			margin-bottom: 2.5rem;
+			div.grid {
+				gap: 1rem;
+			}
 		}
 	}
 }
