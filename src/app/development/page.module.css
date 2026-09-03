@@ -1,7 +1,5 @@
 
 
-/* — Layout — */
-
 main.development {
 	padding: 5rem 2.5rem;
 
@@ -10,6 +8,13 @@ main.development {
 		max-width: 100%;
 		height: auto;
 		border-radius: 0.5rem;
+		border: 4px solid var(--secondary-color);
+		filter: drop-shadow(0 0 0.5rem var(--secondary-color));
+		transition: filter 1s ease;
+	}
+
+	img:hover {
+		filter: drop-shadow(0 0 1.5rem var(--secondary-color));
 	}
 
 	section {
@@ -28,10 +33,15 @@ main.development {
 		}
 	}
 
-	p {
-		margin: 5vh 0;
+	h1 {
+		margin-bottom: 4rem;
+	}
+
+	li {
+		margin: 0.75rem 0;
 	}
 }
+
 
 @media screen and (max-width: 730px) {
 	main.development {
@@ -40,33 +50,5 @@ main.development {
 		section {
 			margin-bottom: 2.5rem;
 		}
-	}
-}
-
-
-/* — Colors — */
-
-main.development {
-	img {
-		border: 4px solid var(--secondary-color);
-		filter: drop-shadow(0 0 0.5rem var(--secondary-color));
-		transition: filter 1s ease;
-	}
-
-	img:hover {
-		filter: drop-shadow(0 0 1.5rem var(--secondary-color));
-	}
-}
-
-
-/* — Typography — */
-
-main.development {
-	h1 {
-		margin-bottom: 4rem;
-	}
-
-	li {
-		margin: 0.75rem 0;
 	}
 }

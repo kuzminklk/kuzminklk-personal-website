@@ -4,11 +4,9 @@
 	
 main.photography {
 	display: flex;
-	flex-flow: row;
-	flex-wrap: wrap;
+	flex-flow: column;
 	justify-content: space-evenly;
-	align-items: center;
-	gap: 12.5vh;
+	gap: 5rem;
 
 	img {
 		flex: auto;

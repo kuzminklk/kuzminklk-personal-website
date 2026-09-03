@@ -1,6 +1,5 @@
 
 
-
 /* ——— Reset ——— */
 
 html, body, div, span, applet, object, iframe,
@@ -46,35 +45,13 @@ table {
 }
 
 
-
 /* ——— Variables ——— */
-
-
-/* — Colors — */
-
-@media (prefers-color-scheme: light) {
-  :root {
-  --primary-color: #fbfbf1;
-  --secondary-color: #04000f;
-  --accent-color: #fbff00;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-  --primary-color: #04000f;
-  --secondary-color: #fbfbf1;
-  --accent-color: #fbff00;
-  }
-}
-
-
-/* — Typography — */
 
 :root {
 	--primary-font: "Amstelvar", Georgia, serif;
 	--secondary-font: 'Red Hat Mono', Courier, monospace;
 	--primary-size: calc(1rem + 0.5vw);
+	--accent-color: #fbff00;
 }
 
 @media screen and (max-width: 730px) {
@@ -83,6 +60,19 @@ table {
 	}
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+  --primary-color: #fbfbf1;
+  --secondary-color: #04000f;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  --primary-color: #04000f;
+  --secondary-color: #fbfbf1;
+  }
+}
 
 
 /* ——— Global styles ——— */
@@ -98,64 +88,9 @@ table {
 	box-sizing: border-box;
 }
 
-
-/* — Layout — */
-
 main {
 	min-height: 125vh;
 	padding: 7.5rem 3rem;
-}
-
-header {
-	padding: 1.5rem 3rem;
-
-	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
-	gap: 1.75rem;
-
-	nav {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-evenly;
-		gap: 1rem;
-	}
-}
-
-footer {
-	padding: 1.5rem 3rem;
-
-	display: flex;
-	flex-flow: row;
-	align-items: center;
-	justify-content: space-evenly;
-	align-self: center;
-	flex-wrap: wrap;
-}
-
-@media screen and (max-width: 730px) {
-	header {
-		flex-direction: column;
-		padding: 3rem 1.5rem;
-		gap: 2.5rem;
-	}
-
-	main {
-		padding: 2.5rem 1.5rem;
-	}
-
-	footer {
-		flex-flow: column;
-		padding: 1.5rem 1.5rem;
-		gap: 1rem;
-	}
-}
-
-
-/* — Colors — */
-
-main {
 	background: var(--primary-color);
 	color: var(--secondary-color);
 }
@@ -164,19 +99,6 @@ main::selection {
 	background: var(--secondary-color);
 	color: var(--primary-color);
 }
-
-header, footer {
-	background: var(--secondary-color);
-	color: var(--primary-color);
-}
-
-header::selection, footer::selection {
-	background: var(--primary-color);
-	color: var(--secondary-color);
-}
-
-
-/* — Typography — */
 
 h1 {
 	text-align: center;
@@ -208,14 +130,7 @@ p {
 	word-spacing: 0.05rem;
 	letter-spacing: 0.05rem;
 	line-height: 1.15;
-}
-
-strong {
-	font-weight: 650;
-}
-
-i {
-	font-style: italic;
+	margin: 1.25rem 0;
 }
 
 a {
@@ -225,35 +140,29 @@ a {
 	color: var(--secondary-color);
 }
 
+a:hover {
+	text-decoration-color: rgba(0, 0, 0, 0);
+}
+
 a span.emoji {
 	display: inline-block;
 	margin-left: 0.5em;
 }
 
-a:hover {
-	text-decoration-color: rgba(0, 0, 0, 0);
+strong {
+	font-weight: 650;
 }
 
-header {
-	a {
-		font-size: 1rem;
-		color: var(--primary-color);
-	}
+em {
+	font-style: italic;
 }
 
-footer {
-	font-family: var(--secondary-font);
-
-	h3 {
-		font-size: 1rem;
-	}
-
-	a {
-		color: var(--primary-color);
-	}
-}
 
 @media screen and (max-width: 730px) {
+	main {
+		padding: 2.5rem 1.5rem;
+	}
+
 	h1 {
 		font-size: 2.5rem;
 		margin: 5rem 0;
