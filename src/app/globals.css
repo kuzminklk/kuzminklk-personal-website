@@ -89,8 +89,8 @@ table {
 }
 
 main {
+	padding: 5rem 2.5rem;
 	min-height: 125vh;
-	padding: 7.5rem 3rem;
 	background: var(--primary-color);
 	color: var(--secondary-color);
 }

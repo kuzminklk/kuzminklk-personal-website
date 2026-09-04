@@ -42,7 +42,7 @@ export default function Home() {
 					<li><em><strong>Additional:</strong> Design → Photos, Web-design, Drawing Music → Guitar Sports → Wrestling Writing → Poetry, Philosophy essays</em></li>
 				</ul>
 			</section>
-			<h1>💾 Projects</h1>
+			<h1><span className={styles.emoji}>💾</span> Projects</h1>
 			<p>
 				<em>All the projects you can explore in my <Link href="https://github.com/kuzminklk" target="blank" rel="noopener noreferrer">GitHub<span className="emoji">👀</span></Link>, here are the favorite ones!</em>
 			</p>

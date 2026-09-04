@@ -1,8 +1,6 @@
 
 
 main.development {
-	padding: 5rem 2.5rem;
-
 	img {
 		flex: auto;
 		max-width: 100%;
@@ -35,10 +33,27 @@ main.development {
 
 	h1 {
 		margin-bottom: 4rem;
+		span.emoji {
+			display: inline-block;
+			animation: moving 5s ease infinite;
+		}
 	}
 
 	li {
 		margin: 0.75rem 0;
+	}
+}
+
+
+@keyframes moving {
+	0% {
+		transform: translateY(-0.25rem);
+	}
+	50% {
+		transform: translateY(0.25rem);
+	}
+	100% {
+		transform: translateY(-0.25rem);
 	}
 }
 
