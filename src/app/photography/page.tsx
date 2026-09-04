@@ -34,7 +34,7 @@ export default function Home() {
   return (
 		<main className={styles.photography}>
 			<section className={styles.introduction}>
-				<h2>🎨Introduction</h2>
+				<h2>🎨 Introduction</h2>
 				<p>
 					I take photos of nature 🌿 and of people 🧘🏻 <em>(usually my friends)</em>
 				</p>
@@ -42,7 +42,7 @@ export default function Home() {
 					Upload at <Link href="https://unsplash.com/@kuzminklk" target="_blank" rel="noopener noreferrer">Unsplash</Link> <em>(there you can use my photos for free for any project)</em> and in my <Link href="https://t.me/kuzminklkk" target="_blank" rel="noopener noreferrer">Telegram-channel</Link>
 				</p>
 			</section>
-			<h1><span className={styles.emoji}>🖼️</span>  Gallery</h1>
+			<h1><span className={styles.emoji}>🖼️</span> Gallery</h1>
 			<section className={styles.gallery}>
 				{ photos.map((photo) => {
 					return (

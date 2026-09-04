@@ -1,0 +1,23 @@
+
+
+main.sports {
+	h1 {
+		span.emoji {
+			display: inline-block;
+			animation: move-away 5s ease infinite;
+		}
+	}
+}
+
+
+@keyframes move-away {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0.75);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
