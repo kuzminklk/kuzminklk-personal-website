@@ -47,14 +47,18 @@ main.photography {
 		section.gallery {
 			gap: 1rem;
 			img {
-				margin: 0 -2rem;
-				border: 4px solid var(--secondary-color);
+				margin: 0 -1.5rem;
+				border-left: none;
+				border-right: none;
+				border-radius: 0%;
+				object-fit: cover;
 			}
 			img.portrait {
-				width: 125%;
+				height: 30rem;
+				width: 100%;
 			}
 			img.landscape {
-				width: 200%;
+				height: 20rem;
 			}
 		}
 	}
