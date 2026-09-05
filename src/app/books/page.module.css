@@ -25,6 +25,7 @@ main.books {
 
 @media screen and (max-width: 730px) {
 	main.books {
+		padding-bottom: 5rem;
 		section.database {
 			iframe {
 				width: 125%;
