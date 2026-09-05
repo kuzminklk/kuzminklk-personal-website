@@ -1,0 +1,38 @@
+
+
+main.books {
+	h1 {
+		span.emoji {
+			display: inline-block;
+			animation: waving 5s ease infinite;
+		}
+	}
+}
+
+
+@keyframes waving {
+	0% {
+		transform: rotate(-7.5deg);
+	}
+	50% {
+		transform: rotate(7.5deg);
+	}
+	100% {
+		transform: rotate(-7.5deg);
+	}
+}
+
+
+@media screen and (max-width: 730px) {
+	main.books {
+		section.database {
+			iframe {
+				width: 125%;
+				margin: 0 -1.5rem;
+				border-left: none;
+				border-right: none;
+				border-radius: 0%;
+			}
+		}
+	}
+}

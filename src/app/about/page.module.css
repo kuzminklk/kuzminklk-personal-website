@@ -43,13 +43,13 @@ main.about {
 
 @keyframes waving {
 	0% {
-		transform: rotate(0deg);
+		transform: rotate(-7.5deg);
 	}
 	50% {
-		transform: rotate(15deg);
+		transform: rotate(7.5deg);
 	}
 	100% {
-		transform: rotate(0deg);
+		transform: rotate(-7.5deg);
 	}
 }
 
