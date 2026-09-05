@@ -138,6 +138,7 @@ a {
 	transition: text-decoration-color 0.075s linear;
 	font-family: var(--secondary-font);
 	color: var(--secondary-color);
+	cursor: pointer;
 }
 
 a:hover {

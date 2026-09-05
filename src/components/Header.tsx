@@ -23,9 +23,9 @@ export function Header() {
 	const pathname = usePathname()
 
 	return (
-		<header className={styles.primary}>
+		<header id="header" className={styles.primary}>
 			<h3>kuzminklk</h3>
-			<nav>
+			<nav id="navigation">
 				{ navigation.map((item) => {
 					const isActive = pathname === item.href
 					return (
