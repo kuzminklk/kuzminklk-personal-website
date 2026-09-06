@@ -1,0 +1,40 @@
+
+
+main.writings {
+	h1 {
+		span.emoji {
+			display: inline-block;
+			animation: moving 5s ease infinite;
+		}
+	}
+}
+
+
+@keyframes moving {
+	0% {
+		transform: translateX(-0.25rem);
+	}
+	50% {
+		transform: translateX(0.25rem);
+	}
+	100% {
+		transform: translateX(-0.25rem);
+	}
+}
+
+
+
+@media screen and (max-width: 730px) {
+	main.writings {
+		padding-bottom: 5rem;
+		section.database {
+			iframe {
+				width: 125%;
+				margin: 0 -1.5rem;
+				border-left: none;
+				border-right: none;
+				border-radius: 0%;
+			}
+		}
+	}
+}
