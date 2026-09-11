@@ -48,8 +48,8 @@ table {
 /* ——— Variables ——— */
 
 :root {
-	--primary-font: "Amstelvar", Georgia, serif;
-	--secondary-font: 'Red Hat Mono', Courier, monospace;
+	--primary-font: Amstelvar, Lora, Georgia, serif;
+	--secondary-font: "Red Hat Mono", "Noto Sans Mono", Courier, monospace;
 	--primary-size: calc(1rem + 0.5vw);
 	--accent-color: #fbff00;
 }

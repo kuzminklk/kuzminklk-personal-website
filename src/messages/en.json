@@ -1,0 +1,21 @@
+{
+	"Footer": {
+		"madeBy": "Made by Daniel Cosmo",
+		"source": "Source code at GitHub",
+		"contactStripped": "Contact me — "
+	},
+	"about": {
+		"greet": {
+			"hi": "Hi!",
+			"introduction": "I'm Daniel",
+			"photo": "Me in yellow jacket"
+		},
+		"about": {
+			"role": "<strong>Computer-science engineer</strong> currently focused in Web3, Front-end and AI",
+			"names": "You may know me as <emphasize>Daniel Cosmo</emphasize>, <emphasize>Даниил Кузьмин</emphasize> or <emphasize>kuzminklk</emphasize>",
+			"activities": "Also <sportsLink>I do sports<emoji>💪</emoji></sportsLink>, <photographyLink>take photos<emoji>📸</emoji></photographyLink> and <booksLink>read a lot of books<emoji>📚</emoji></booksLink> (from Dawkins to Noah Harari, from Tolstoy to Xunzi)!",
+			"languages": "Speak three languages: English, Russian, Belarussian"
+		},
+		"explore": "You can explore more of my activities in the sections of <scroll>navigation menu<emoji>🧭</emoji></scroll>"
+	}
+}
