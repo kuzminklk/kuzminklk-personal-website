@@ -12,19 +12,8 @@ import "./globals.css"
 import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
 import { routing } from "@/i18n/routing"
+import { getTranslations } from "next-intl/server"
 
-
-export const metadata: Metadata = {
-  title: "kuzminklk",
-  description: "Daniel Cosmo's (kuzminklk) personal website",
-  icons: {
-    icon: [
-      {
-        url: "/scroll.svg",
-      }
-    ]
-  }
-}
 
 const redHatMono = Red_Hat_Mono({subsets: ["latin"], weight: "400"})
 const lora = Lora({weight: "variable"})
@@ -35,6 +24,25 @@ const amstelvar = localFont({
   display: "swap",
 })
 
+export async function generateMetadata():Metadata {
+  const translations = await getTranslations("metadata")
+
+  return {
+    title: "kuzminklk",
+    description: translations("description"),
+    icons: {
+    icon: [
+      {
+        url: "/scroll.svg",
+      }
+    ]
+  }
+  }
+}
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({locale}))
+}
 
 export default async function LocaleLayout({
   children,
