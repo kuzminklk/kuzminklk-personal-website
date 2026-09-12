@@ -3,10 +3,10 @@
 "use client"
 
 
-import Link from "next/link"
 import Image from "next/image"
 import { useTranslations } from "next-intl"
 
+import { Link } from "@/i18n/naviagation"
 import styles from "./page.module.css"
 import Me from "@/public/me.jpg"
 

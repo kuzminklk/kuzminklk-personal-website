@@ -7,6 +7,15 @@
 		"source": "Исходный код на GitHub",
 		"contactFull": "Написать мне в Telegram"
 	},
+	"Header": {
+		"about": "Обо мне",
+		"development": "Программирование",
+		"photography": "Фотографии",
+		"sports": "Спорт",
+		"books": "Книги",
+		"writings": "Сочинения",
+		"connect": "Связаться со мной"
+	},
 	"about": {
 		"greet": {
 			"hi": "Привет!",
@@ -20,5 +29,98 @@
 			"languages": "Говорю на трёх языках: русском, английском, белорусском"
 		},
 		"explore": "Ты можешь узнать больше о моих активностиях в <scroll>верхнем меню<emoji>🧭</emoji></scroll>"
+	},
+	"development": {
+		"introduction": {
+			"header": "Вступление",
+			"fields": "Я изучаю информатику самостоятельно около года по книгам, курсам, учебным программам, документациям, а также при помощи иcкуственного интеллекта и практики!",
+			"curricullum": "Сделал <curriculumLink>крутой учебный план в Notion<emoji>📔</emoji></curriculumLink>, в котором много конспектов, учебных материалов и т.д.",
+			"practice": "Разрабатываю вебсайты, приложения, смарт-контракты…",
+			"github": "Ты можешь изучить мой <githubLink>GitHub<emoji>👀</emoji></githubLink>"
+		},
+		"skills": {
+			"header": "Навыки",
+			"skills": {
+				"fundamentals": "<strong>Основы</strong>: C, Операционные системы (Windows, Linux, Android), Алгоритмы, Структуры данных, Интернет (IP/TCP, HTTP…), Аппаратное обеспечение",
+				"front-end": "<strong>Веб-интерфейс</strong>: HTML, CSS, JavaScript → React, TypeScript, Tailwind, Next.js, Playwright",
+				"back-end": "<strong>Логика веб-приложения</strong>: Python → Django, JavaScript → Node.js, Express → Next.js → next-intl",
+				"blockchain": "<strong>Блокчейн</strong>: Solidity, Foundry, Hardhat, Chainlink",
+				"web-3-front-end": "<strong>Веб-интерфейс для блокчейн-приложения</strong>: viem, wagmi, ethers.js, RainbowKit, Connect Kit, App Kit",
+				"tools": "<strong>Инструменты</strong>: Docker, Git, GitHub, Notion, Visual Studio Code",
+				"artificial-intellegence": "<strong>Искуственный интеллект</strong>: Языковые модели (Gemini, ChatGPT, DeepSeek, Claude), Codex, Claude Code, GitHub Copilot",
+				"soft-skills": "<strong>Мягкие</strong>: Коммуникация, Дисциплина, Самообразование, Здоровье и Активность, Погружение в информацию",
+				"additional": "<emphasize><strong>Дополнительно</strong>: Дизайн → Фотографирование, Веб-дизайн, Рисование; Музыка → Гитара; Спорт → Борьба; Писательство → Стихи, Философские сочинения</emphasize>"
+			}
+		},
+		"projects": {
+			"header": "Проекты",
+			"explore": "<emphasize>Больше проектов ты можешь найти в моём <githubLink>GitHub<emoji>👀</emoji></githubLink>, здесь только некоторые!</emphasize>",
+			"web-interfaces": {
+				"header": "Веб-интерфейсы",
+				"strawberry-vendor": {
+					"title": "Продавец клубники",
+					"description": "Продавец клубничного токена (ERC-20). Полностью работает на Ethereum Sepolia",
+					"image-alternative": "Снимок сайта"
+				},
+				"buy-me-a-coffee": {
+					"title": "Купи мне кофе!",
+					"description": "Донат. Полностью работает на Ethereum Sepolia",
+					"image-alternative": "Снимок сайта"
+				},
+				"moby-dick": {
+					"title": "Моби Дик",
+					"description": "Электронная книга",
+					"image-alternative": "Снимок сайта"
+				},
+				"tsender": {
+					"title": "Отправитель аирдропа",
+					"description": "Эффективный раздатчик аирдропа",
+					"image-alternative": "Снимок сайта"
+				}
+			}
+		}
+	},
+	"photography": {
+		"introduction": {
+			"header": "Вступление",
+			"objects": "Я снимаю природу 🌿 и людей 🧘🏻 <emphasize>(обычно друзей)</emphasize>",
+			"share": "Загружаю на <unsplashLink>Unsplash</unsplashLink> <emphasize>(там ты можешь использовать мои фотографии для любых своих проектов)</emphasize> и в мой <telegramChannelLink>Telegram-канал</telegramChannelLink>"
+		},
+		"gallery": {
+			"header": "Галлерея",
+			"photos": {
+				"asya": {
+					"image-alternative": "Ася в лесу"
+				},
+				"spring-flowers": {
+					"image-alternative": "Весенние цветы"
+				},
+				"natasha": {
+					"image-alternative": "Наташа в розовом"
+				},
+				"asya-at-fall": {
+					"image-alternative": "Ася осенью"
+				},
+				"vova": {
+					"image-alternative": "Вова в лесу"
+				},
+				"flowers": {
+					"image-alternative": "Фиолетовые цветы"
+				},
+				"dasha": {
+					"image-alternative": "Даша с гитарой"
+				},
+				"dasha-at-night": {
+					"image-alternative": "Даша ночью"
+				},
+				"misha": {
+					"image-alternative": "Миша с гитарой"
+				},
+				"anya": {
+					"image-alternative": "Сексуальная Аня в очках"
+				}
+			}
+		},
+		"ending": "Больше моих фотографий ты можешь найти на <unsplashLink>Unsplash</unsplashLink> и в моём <telegramChannelLink>Telegram-канале</telegramChannelLink>!"
 	}
 }

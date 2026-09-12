@@ -5,14 +5,13 @@ import Link from "next/link"
 import localFont from "next/font/local"
 import { notFound } from "next/navigation"
 import { Red_Hat_Mono, Lora, Noto_Sans_Mono } from "next/font/google"
-import { NextIntlClientProvider } from "next-intl"
-import { hasLocale } from "next-intl"
+import { NextIntlClientProvider, hasLocale, useLocale } from "next-intl"
+import { getTranslations } from "next-intl/server"
 
 import "./globals.css"
 import { Header } from "@/components/Header"
 import { Footer } from "@/components/Footer"
 import { routing } from "@/i18n/routing"
-import { getTranslations } from "next-intl/server"
 
 
 const redHatMono = Red_Hat_Mono({subsets: ["latin"], weight: "400"})
@@ -52,13 +51,16 @@ export default async function LocaleLayout({
   params: Promise<{locale: string}>
 }>) {
   const {locale} = await params
+  const isCyrrilicLocale = ["ru", "by"].includes(locale)
+  const latinFonts = `${amstelvar.className} ${redHatMono.className}`
+  const cyrrilicFonts = `${lora.className} ${notoSansMono.className}`
 
   if(!hasLocale(routing.locales, locale)) {
     notFound()
   }
 
   return (
-    <html lang={locale} className={`${amstelvar.className} ${redHatMono.className} ${lora.className} ${notoSansMono.className}`}>
+    <html lang={locale} className={ isCyrrilicLocale ? cyrrilicFonts : latinFonts }>
       <body>
         <NextIntlClientProvider>
           <Header/>

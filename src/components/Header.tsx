@@ -3,23 +3,23 @@
 "use client"
 
 
-import Link from "next/link"
-import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl"
+import { Link, usePathname } from "@/i18n/naviagation"
 
 import styles from "./Header.module.css"
 
 
-const navigation = [
-	{ name: "About", href: "/about", emoji: "🧑‍🚀" },
-	{ name: "Development", href: "/development", emoji: "💻" },
-	{ name: "Photography", href: "/photography", emoji: "📸" },
-	{ name: "Sports", href: "/sports", emoji: "💪" },
-	{ name: "Books", href: "/books", emoji: "📚" },
-	{ name: "Writings", href: "/writings", emoji: "📒" },
-	{ name: "Connect", href: "/connect", emoji: "🤝" },
-]
-
 export function Header() {
+	const translations = useTranslations("Header")
+	const navigation = [
+		{ name: translations("about"), href: "/about", emoji: "🧑‍🚀" },
+		{ name: translations("development"), href: "/development", emoji: "💻" },
+		{ name: translations("photography"), href: "/photography", emoji: "📸" },
+		{ name: translations("sports"), href: "/sports", emoji: "💪" },
+		{ name: translations("books"), href: "/books", emoji: "📚" },
+		{ name: translations("writings"), href: "/writings", emoji: "📒" },
+		{ name: translations("connect"), href: "/connect", emoji: "🤝" },
+	]
 	const pathname = usePathname()
 
 	return (

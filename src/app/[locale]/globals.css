@@ -54,6 +54,10 @@ table {
 	--accent-color: #fbff00;
 }
 
+html[lang="ru"] {
+	--secondary-font: "Noto Sans Mono", Courier, monospace;
+}
+
 @media screen and (max-width: 730px) {
 	:root {
 		--primary-size: calc(1.5rem + 0.5vw);

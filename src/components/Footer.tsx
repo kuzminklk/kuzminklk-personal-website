@@ -1,13 +1,13 @@
 
 
 import Link from "next/link"
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 
 import styles from "./Footer.module.css"
 
 
-export function Footer() {
-	const translations = useTranslations("Footer")
+export async function Footer() {
+	const translations = await getTranslations("Footer")
 
 	return (
 		<footer className={styles.primary}>

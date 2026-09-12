@@ -1,7 +1,6 @@
 
 
-import Link from "next/link"
-
+import { Link } from "@/i18n/naviagation"
 import styles from "./page.module.css"
 
 

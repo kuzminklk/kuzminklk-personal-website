@@ -7,6 +7,15 @@
 		"source": "Source code at GitHub",
 		"contactStripped": "Contact me — "
 	},
+	"Header": {
+		"about": "About",
+		"development": "Development",
+		"photography": "Photography",
+		"sports": "Sports",
+		"books": "Books",
+		"writings": "Writings",
+		"connect": "Connect"
+	},
 	"about": {
 		"greet": {
 			"hi": "Hi!",
@@ -20,5 +29,98 @@
 			"languages": "Speak three languages: English, Russian, Belarussian"
 		},
 		"explore": "You can explore more of my activities in the sections of <scroll>navigation menu<emoji>🧭</emoji></scroll>"
+	},
+	"development": {
+		"introduction": {
+			"header": "Introduction",
+			"fields": "I study computer-science and science in general for few years by myself. I learn from AIs, courses, books, curriculums, documentations…",
+			"curricullum": "I've built <curriculumLink>cool study structure in Notion<emoji>📔</emoji></curriculumLink> which includes curriculum, study materials, workbooks, etc",
+			"practice": "I develop web interfaces, applications, smart-contracts…",
+			"github": "You could explore my <githubLink>GitHub<emoji>👀</emoji></githubLink>"
+		},
+		"skills": {
+			"header": "Skills",
+			"skills": {
+				"fundamentals": "<strong>Fundamentals</strong>: C, Operational Systems (Windows, Linux, Android), Algorithms, Data Structures, Web (IP/TCP, HTTPS), Hardware",
+				"front-end": "<strong>Front-end</strong>: HTML, CSS, JavaScript → React, TypeScript, Tailwind, Next.js, Playwright",
+				"back-end": "<strong>Back-end</strong>: Python → Django, JavaScript → Node.js, Express → Next.js → next-intl",
+				"blockchain": "<strong>Blockchain</strong>: Solidity, Foundry, Hardhat, Chainlink",
+				"web-3-front-end": "<strong>Web-3 Front-end</strong>: viem, wagmi, ethers.js, RainbowKit, Connect Kit, App Kit",
+				"tools": "<strong>Tools</strong>: Docker, Git, GitHub, Notion, Visual Studio Code",
+				"artificial-intellegence": "<strong>Artificial Intellegence</strong>: LLMs (Gemini, ChatGPT, DeepSeek, Claude), Codex, Claude Code, GitHub Copilot",
+				"soft-skills": "<strong>Soft-skills</strong>: Communication, Discipline, Education, Health and Activity, Information Diving",
+				"additional": "<emphasize><strong>Additional</strong>: Design → Photos, Web-design, Drawing; Music → Guitar; Sports → Wrestling; Writing → Poetry, Philosophy essays</emphasize>"
+			}
+		},
+		"projects": {
+			"header": "Projects",
+			"explore": "<emphasize>All the projects you can explore in my <githubLink>GitHub<emoji>👀</emoji></githubLink>, here are the favorite ones!</emphasize>",
+			"web-interfaces": {
+				"header": "Web Interfaces",
+				"strawberry-vendor": {
+					"title": "Strawberry Vendor",
+					"description": "Vendor for Strawberry token (ERC-20). Fully works in Ethereum Sepolia",
+					"image-alternative": "Strawberry vendor website screenshot"
+				},
+				"buy-me-a-coffee": {
+					"title": "Buy me a coffee!",
+					"description": "Donation interface.  Fully works in Ethereum Sepolia",
+					"image-alternative": "Buy me a coffe donation website screenshot"
+				},
+				"moby-dick": {
+					"title": "Moby-Dick",
+					"description": "Site, where you can read such an intresting book",
+					"image-alternative": "Moby-Dick web-book screenshot"
+				},
+				"tsender": {
+					"title": "Efficient airdrop sender",
+					"description": "Web-interface for efficient airdrop sender smart-contract ineractions",
+					"image-alternative": "Efficient airdrop sender website screenshot"
+				}
+			}
+		}
+	},
+	"photography": {
+		"introduction": {
+			"header": "Introduction",
+			"objects": "I take photos of nature 🌿 and of people 🧘🏻 <emphasize>(usually my friends)</emphasize>",
+			"share": "Upload at <unsplashLink>Unsplash</unsplashLink> <emphasize>(there you can use my photos for free for any project)</emphasize> and in my <telegramChannelLink>Telegram-channel</telegramChannelLink>"
+		},
+		"gallery": {
+			"header": "Gallery",
+			"photos": {
+				"asya": {
+					"image-alternative": "Asya in the forest"
+				},
+				"spring-flowers": {
+					"image-alternative": "Spring flowers"
+				},
+				"natasha": {
+					"image-alternative": "Natasha in pink clothes"
+				},
+				"asya-at-fall": {
+					"image-alternative": "Asya at fall season"
+				},
+				"vova": {
+					"image-alternative": "Vova in the forest"
+				},
+				"flowers": {
+					"image-alternative": "Purple flowers"
+				},
+				"dasha": {
+					"image-alternative": "Dasha with guitar"
+				},
+				"dasha-at-night": {
+					"image-alternative": "Dasha at night"
+				},
+				"misha": {
+					"image-alternative": "Misha with guitar"
+				},
+				"anya": {
+					"image-alternative": "Sexy Anya with glasses"
+				}
+			}
+		},
+		"ending": "More of my photos you can find at <unsplashLink>Unsplash</unsplashLink> and in my <telegramChannelLink>Telegram-channel</telegramChannelLink>!"
 	}
 }
